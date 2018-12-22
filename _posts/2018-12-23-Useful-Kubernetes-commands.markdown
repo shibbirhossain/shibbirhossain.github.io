@@ -6,6 +6,8 @@ categories: [blog, tech]
 tags: [Kubernets, hot]
 comments: true
 ---
+![k8s](/assets/k8s.svg){: .center-image }
+
 Get all namespaces:
 {% highlight ruby %}
 kubectl get ns
