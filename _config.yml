@@ -16,8 +16,7 @@
 title: Shibbir Hossain
 email: shibbirhssn@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hi, this is Shibbir. Software developer based in Melbourne, Australia.
-  I am currently doing my Masters in Information Technology in Mobile and Cloud Computing specialization at Swinburne University of Technology.
+  Hi, this is Shibbir. I work as a Software developer who is passionate about cloud and emerging technologies.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: shibbirhossain
