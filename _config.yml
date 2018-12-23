@@ -22,6 +22,10 @@ url: "http://shibbirhossain.com" # the base hostname & protocol for your site, e
 twitter_username: shibbirhossain
 github_username:  shibbirhossain
 
+
+# Google Analytics
+google_analytics: UA—78141163-1
+
 # Build settings
 markdown: kramdown
 theme: minima
