@@ -43,6 +43,28 @@ kubectl config set-context yourawesomecontext --namespace=yourawesomenamespace
 {% endhighlight %}
 
 
+K8s port forward:
+{% highlight ruby %}
+kubectl port-forward podname-43cc3323f -n yourawesomenamespace 5000:5000
+#=> here podname-43cc3323f is a sample pod name. Left side of the port number (5000)
+#=> exposes local machine port number, right side port number belongs to podname-43cc3323f
+{% endhighlight %}
+
+k8s describe pods:
+{% highlight ruby %}
+kubectl describe pods podname-43cc3323f -n yourawesomenamespace
+#=> here podname-43cc3323f is a sample pod name.
+{% endhighlight %}
+
+k8s pod logs:
+{% highlight ruby %}
+kubectl logs podname-43cc3323f -n yourawesomenamespace
+#=> here podname-43cc3323f is a sample pod name.
+{% endhighlight %}
+
+
+
+
 <div id="disqus_thread"></div>
 <script>
 
