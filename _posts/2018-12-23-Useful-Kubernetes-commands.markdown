@@ -62,6 +62,11 @@ kubectl logs podname-43cc3323f -n yourawesomenamespace
 #=> here podname-43cc3323f is a sample pod name.
 {% endhighlight %}
 
+k8s get ingress:
+{% highlight ruby %}
+kubectl get ing -n yourawesomenamespace
+#=> here podname-43cc3323f is a sample pod name.
+{% endhighlight %}
 
 
 
