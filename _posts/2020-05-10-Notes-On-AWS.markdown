@@ -105,3 +105,36 @@ Redis/Memcached
     Cons:
     * cache churn : waste of resource, most data is never read.  
 
+
+### S3 Versioning
+best practice is to enable versioning
+* protect against unintended delete
+* easy rollback to prev version
+
+### S3 Encryption
+1. SSE-S3 - managed by AWS S3
+2. SSE-KMS - managed by AWS KMS
+3. SSE-C - you want to manage your own encryption key (BYO encryprion Key)
+4. Client Side encryption
+
+#### SSE-S3
+AWS S3 manages, object encrypted server side  
+AES-256 encryption type  
+Must set Header:   
+> "x-amz-server-side-encryption": "AES-256"  
+
+#### SSE-KMS
+managed by AWS KMS  
+Pro:
+* user control + audit trail (key rotation)
+
+Server side enc
+Header:  
+> "x-amz-server-side-encryption": "aws:kms" 
+
+Key -  KMS Customer Master Key (CMK)
+
+
+
+
+
