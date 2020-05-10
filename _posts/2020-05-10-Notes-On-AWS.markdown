@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Notes On AWS"
+title:  "Study Notes On AWS"
 date:   2020-05-10 06:36:00 +1100
 categories: [blog, tech]
 tags: [AWS, notes, developer]
@@ -58,4 +58,50 @@ Snapshots are also encrypted
 * CNAME - URL to URL 
 * ALIAS - URL to AWS Resources
 
+## RDS 
+* Encryption at rest - KMS - **AES-256**
+* Encryption in flight - **SSL**
+    * postgres - rds.force_ssl = 1
+    * MySQL - REQUIRE SSL
+
+## ElastiCache
+Redis/Memcached
+* make application stateless by storing state in a common cache
+* Write scaling - Sharding
+* Read scaling - Read replicas
+* multi AZ with failover
+* cache hit / cache miss
+* cache invalidation strategy  
+    
+#### Redis     
+1. in memory **Key-value**
+2. super low latency (sub micro sec)
+3. cache survive reboots by default (persistence)
+4. great to host -   
+                i) user sessions  
+                ii) Leaderboard  
+                iii) distributed states  
+                iv) relieve pressure on db  
+                v) pub/sub messaging  
+
+#### Memcached
+1. in memory **object** store
+2. cache doesn't survive reboots
+
+#### Elasticache Patterns
+1. Lazy loading  
+    Pros:  
+    * only requested data is cached
+        
+    Cons:
+    * cache miss penalty  
+    * Stale data - to avoid this use Write-Through and TTL strategy  
+
+2. Write through  
+    Pros:  
+    * cache is never stale
+    * write penalty as oppose to read penalty: users are more tolerant when uploading data
+
+    Cons:
+    * cache churn : waste of resource, most data is never read.  
 
