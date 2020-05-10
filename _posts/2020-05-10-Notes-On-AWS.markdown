@@ -25,7 +25,7 @@ EC2 connect - ssh from browser (AMI linux 2 only)
 pem file permission - 0644 -> too open  
 > chmod 0400 *.pem  
 
-## Load Balancers
+### Load Balancers
 * HTTPS (SSL termination)
 * Enforce stickiness with cookies  
 
@@ -36,3 +36,26 @@ Three diff kinds of LB offerings:
 
 To get the actual IP 
 > x-forwarded-for (contains the actual IP)
+
+### ASG
+* Min Size
+* Actual Size / Desired Capacity
+* Max Size  
+
+Send Custom Metric via --> PutMetric API  
+> ASG <- -triggered by- - cloudWatch  
+
+ASG uses Launch Configuration
+
+### EBS Volume 
+Network drive (not physical drive),attach to AZ, EBS encryption  
+In flight and at rest encryption  
+Snapshots are also encrypted
+
+## Route 53
+* A - URL to IPV4
+* AAAA - URL to IPV6
+* CNAME - URL to URL 
+* ALIAS - URL to AWS Resources
+
+
