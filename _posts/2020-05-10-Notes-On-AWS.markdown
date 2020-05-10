@@ -134,6 +134,23 @@ Header:
 
 Key -  KMS Customer Master Key (CMK)
 
+#### SSE-C
+* fully managed by customer outside of AWS
+* S3 does not store the encryption key
+* must use HTTPS
+* encryption key must be provided in HTTP header
+* Key - Client side data key
+
+#### Client Side encryption
+* Client library such as S3 Encryption Client
+* Client must encrypt the data themselves before sending to S3
+* Client must decrypt data themselves when retrieving from S3
+* Customer manages key + encryption cycle
+
+#### Encryption in Transit(SSL/TLS) - In flight
+* SSE-C in HTTPS is must
+* SSL/TLS
+
 
 
 
