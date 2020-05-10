@@ -3,6 +3,8 @@ layout: page
 title: About
 permalink: /about/
 ---
+![shibbir](/assets/swin_shibbir.jpg){: .center-image }
+
 Welcome to my personal website.Here you will find all my posts related to the technologies I like to play around with.
 
 You can find the source code for the projects I did at my github profile.
