@@ -3,7 +3,7 @@ layout: post
 title:  "Useful Kubernets commands"
 date:   2018-12-22 09:38:04 +1100
 categories: [blog, tech]
-tags: [Kubernets, hot]
+tags: [kubernetes, k8s]
 comments: true
 ---
 ![k8s](/assets/k8s.svg){: .center-image }

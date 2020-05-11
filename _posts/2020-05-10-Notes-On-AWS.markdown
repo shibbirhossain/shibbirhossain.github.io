@@ -3,7 +3,7 @@ layout: post
 title:  "Study Notes On AWS"
 date:   2020-05-10 06:36:00 +1100
 categories: [blog, tech]
-tags: [AWS, notes, developer]
+tags: [aws, notes, developer]
 comments: true
 ---
 ![aws](/assets/aws.svg){: .center-image }  
@@ -114,7 +114,7 @@ best practice is to enable versioning
 ### S3 Encryption
 1. SSE-S3 - managed by AWS S3
 2. SSE-KMS - managed by AWS KMS
-3. SSE-C - you want to manage your own encryption key (BYO encryprion Key)
+3. SSE-C - you want to manage your own encryption key (BYO encryprion Key 😂)
 4. Client Side encryption
 
 #### SSE-S3
@@ -150,8 +150,3 @@ Key -  KMS Customer Master Key (CMK)
 #### Encryption in Transit(SSL/TLS) - In flight
 * SSE-C in HTTPS is must
 * SSL/TLS
-
-
-
-
-
