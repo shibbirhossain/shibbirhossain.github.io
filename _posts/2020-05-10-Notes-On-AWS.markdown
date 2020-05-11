@@ -150,3 +150,46 @@ Key -  KMS Customer Master Key (CMK)
 #### Encryption in Transit(SSL/TLS) - In flight
 * SSE-C in HTTPS is must
 * SSL/TLS
+
+### S3 Security
+* IAM Policies
+* Bucket Policies - json based policy
+    * Resources
+    * Action
+    * Effect: Allow/Deny
+    * Principle: user/acc to apply policy to
+* policy can be used to 
+    * grant publlic access to bucket
+    * force objects to be encrypted at upload
+    * grant access to another acc(cross account)
+* Networking - VPC endpoints
+* logging and audit
+    * S3 access logs in other S3 bucket (best practice is to not put on the same one)
+    * API calls can be logged via cloudtrail
+* User security
+    * MFA - versioned buckets 
+    * signed url: limited time access (premium video)
+
+### S3 CORS
+* Cross origin resource sharing
+> Access-Control-Allow-Origin : domain
+
+### S3 Consistency Model
+* Read after write
+    > PUT 200 > GET 200
+* Eventually consistent
+    > * GET 404 > PUT 200 > GET 404 (results may be cached)
+    > * PUT 200 v1 > PUT 200 v2 > GET 200 v1 (might be older object) 
+    > * DELETE 200 > GET 200 (might get the object even after delete for a shortwhile)
+
+### S3 Performance
+For each prefix  
+* 3500 TPS PUT
+* 5500 TPS GET
+
+For faster upload of objects(>=100MB) use multipart upload  
+S3 transfer accellaration(uses edge locations)
+SSE-KMS encryption limited to your AWS limits for KMS usage (~100s-1000) downloads/upload per sec
+
+#### S3 and Glacier Select
+    
