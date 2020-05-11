@@ -188,7 +188,7 @@ For each prefix
 * 5500 TPS GET
 
 For faster upload of objects(>=100MB) use multipart upload  
-S3 transfer accellaration(uses edge locations)
+S3 transfer accellaration(uses edge locations)  
 SSE-KMS encryption limited to your AWS limits for KMS usage (~100s-1000) downloads/upload per sec
 
 #### S3 and Glacier Select
