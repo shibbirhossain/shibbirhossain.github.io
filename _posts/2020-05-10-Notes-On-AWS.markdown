@@ -192,4 +192,27 @@ S3 transfer accellaration(uses edge locations)
 SSE-KMS encryption limited to your AWS limits for KMS usage (~100s-1000) downloads/upload per sec
 
 #### S3 and Glacier Select
-    
+
+## AWS CLI
+   > aws sts decode-authorization-message --encode-message "message"
+
+## EC2 instance metadata
+* 169.254.169.254/latest/meta-data
+* Metadata = data about EC2 instance
+* Userdata = launch script of EC2 instance
+
+## AWS SDK
+if region not chosen request goes to **us-east-1** by default from SDK
+
+#### Exponential Backoff
+1. -> 1s
+2. --> 2s
+3. ----> 4s 
+4. --------> 8s
+5. ----------------> 16s
+
+## EBS
+Three architecture model:
+1. Single instance deployment: dev
+2. LB + ASG: production web apps
+3. ASG only: non-web apps in prod
