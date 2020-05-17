@@ -216,3 +216,20 @@ Three architecture model:
 1. Single instance deployment: dev
 2. LB + ASG: production web apps
 3. ASG only: non-web apps in prod
+
+ElasticBeanstalk consists of 3 components:
+1. Application
+2. Application Version
+3. Environment name (dev, test, prod)
+
+### EBS deployment modes
+1. All at once - fastest deployment, but downtime
+2. Rolling - update few at a time, move to new once once first one is healthy, takes down instances, capacity goes down
+3. Rolling with batches - spins new instances instead of taking down existing ones, always work full capacity
+4. Immutable - spins new instance in new ASG, swaps all instances when everything is healthy. Quick roll back, longest deployment time.
+
+#### ElasticBeanstalk Extensions
+* .ebextensions directory
+* .config extension(Ex. logging.config)
+
+### Few more EB stuff
