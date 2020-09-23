@@ -233,3 +233,5 @@ ElasticBeanstalk consists of 3 components:
 * .config extension(Ex. logging.config)
 
 ### Few more EB stuff
+* package dependencies with source code to imporve deployment performance 
+* HTTPS securelistener - alb.config -> to upload SSL, security group(sg) allow 443
