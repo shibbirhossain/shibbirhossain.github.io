@@ -235,3 +235,7 @@ ElasticBeanstalk consists of 3 components:
 ### Few more EB stuff
 * package dependencies with source code to imporve deployment performance 
 * HTTPS securelistener - alb.config -> to upload SSL, security group(sg) allow 443
+* Lifecycle policy - 1000 versions
+* Retain source bundle in S3 periodic tasks in cron.yaml
+* decouple RDS from EB with connection string
+* enabling deletion protection in RDS will stop it from terminating while deleting EBS environment
