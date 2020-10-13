@@ -22,5 +22,5 @@ Experienced in architecting AWS and GCP solutions, any server task automation, d
   [Institute of Information Technology, University of Dhaka](http://www.iit.du.ac.bd/)
 
 ### Certifications
-* [<div><img src="assets/aws_dev_assoc.png" alt="hello" width="90" height="90">
- AWS Certified Developer Associate</div>](https://www.youracclaim.com/badges/7382a71d-538c-43eb-9ef6-8f42cf868547/public_url)
+* [<img src="assets/aws_dev_assoc.png" alt="hello" width="90" height="90">
+ AWS Certified Developer Associate](https://www.youracclaim.com/badges/7382a71d-538c-43eb-9ef6-8f42cf868547/public_url)
