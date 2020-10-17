@@ -7,6 +7,9 @@ permalink: /resume
 Experienced in architecting AWS and GCP solutions, any server task automation, developing event-driven Serverless microservices, backend RESTFul API development. Worked on challenging projects involving real-time collaboration and complex architecture. My strength lies in the ability to analyze any problem critically, always focus on building resilient and robust services that can scale up, rapid prototyping and choosing the appropriate technology based on the scenario. 
 
 ### Work Experience
+* Data Science Engineer<br>
+  15th October 2020 - Present <br>
+  [Coles Group] (https://www.colesgroup.com.au/home/)
 * Ex Software Engineer(Data & Cloud)<br> 
   June 2020 - October 2020 <br>
  [National Australia Bank](https://www.nab.com.au/)
