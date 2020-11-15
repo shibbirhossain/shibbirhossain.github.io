@@ -9,7 +9,6 @@ Experienced in architecting AWS and GCP solutions, any server task automation, d
 ### Work Experience
 * Data Science Engineer<br>
   15th October 2020 - Present <br>
-  [Coles Group](https://www.colesgroup.com.au/home/)
 * Ex Software Engineer(Data & Cloud)<br> 
   June 2020 - October 2020 <br>
  [National Australia Bank](https://www.nab.com.au/)
